@@ -1,0 +1,22 @@
+[package]
+name = "importer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "importer-worker"
+path = "src/main.rs"
+
+[lib]
+name = "importer"
+path = "src/lib.rs"
+
+[dependencies]
+calamine = "0.19.1"
+celery = "0.5.3"
+dotenv = "0.15.0"
+reqwest = { version = "0.11.16", features = ["blocking"] }
+serde = "1.0.159"
+tokio = "1.27.0"
