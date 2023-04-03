@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name = "importer-worker"
+name = "worker"
 path = "src/main.rs"
 
 [lib]
@@ -17,6 +17,7 @@ path = "src/lib.rs"
 calamine = "0.19.1"
 celery = "0.5.3"
 dotenv = "0.15.0"
-reqwest = { version = "0.11.16", features = ["blocking"] }
+reqwest = "0.11.16"
 serde = "1.0.159"
+serde_json = "1.0.95"
 tokio = "1.27.0"

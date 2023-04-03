@@ -14,3 +14,7 @@
 # already existing elements were commented out
 
 #/target
+
+# VS Code
+.vscode/
+*.code-workspace
